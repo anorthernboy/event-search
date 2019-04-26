@@ -19,10 +19,14 @@ const EventCard = ({
         <div className="event-grid">
           <img src={eventImage} alt="" className="event-image" />
           <div className="event-name">
-            {eventName.slice(0, 30).trimEnd() + "..."}
+            {eventName.length <= 30
+              ? eventName
+              : eventName.slice(0, 30).trimEnd() + "..."}
           </div>
           <div className="event-description">
-            {description.slice(0, 90).trimEnd() + "..."}
+            {description.length <= 90
+              ? description
+              : description.slice(0, 90).trimEnd() + "..."}
           </div>
           <img
             src={pin}
@@ -33,6 +37,7 @@ const EventCard = ({
           <img src={calendar} alt="date" className="eventcard-icon date-icon" />
           <div className="eventcard-details event-date">
             {new Date(date).toLocaleDateString("en-GB", {
+              weekday: "long",
               day: "numeric",
               month: "long",
               year: "numeric"

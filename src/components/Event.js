@@ -61,9 +61,13 @@ class Event extends Component {
                 className="eventpage-icon eventpage-time-icon"
               />
               <div className="eventpage-details eventpage-event-time">
-                {`${event.openingtimes.doorsopen} til ${
-                  event.openingtimes.doorsclose
-                }`}
+                {event.openingtimes.lastentry
+                  ? `${event.openingtimes.doorsopen} til ${
+                      event.openingtimes.doorsclose
+                    } (last entry ${event.openingtimes.lastentry.slice(0, 5)})`
+                  : `${event.openingtimes.doorsopen} til ${
+                      event.openingtimes.doorsclose
+                    }`}
               </div>
               <img
                 src={user}
