@@ -49,6 +49,7 @@ class Event extends Component {
               />
               <div className="eventpage-details eventpage-event-date">
                 {new Date(event.date).toLocaleDateString("en-GB", {
+                  weekday: "long",
                   day: "numeric",
                   month: "long",
                   year: "numeric"

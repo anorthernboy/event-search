@@ -27,15 +27,19 @@ class App extends Component {
     if (isLoading) return <p>this is a loading</p>;
 
     return (
-      <div className="App">
-        <Header fetchEventsByKeyword={this.fetchEventsByKeyword} />
-        <Scroll>
-          <Router>
-            <EventList path="/" events={events} />
-            <Event path="/event/:event_id" />
-            <Artist path="/artist/:artist_id" />
-          </Router>
-        </Scroll>
+      <div>
+        {events.length !== 0 && (
+          <div className="App">
+            <Header fetchEventsByKeyword={this.fetchEventsByKeyword} />
+            <Scroll>
+              <Router>
+                <EventList path="/" events={events} />
+                <Event path="/event/:event_id" />
+                <Artist path="/artist/:artist_id" />
+              </Router>
+            </Scroll>
+          </div>
+        )}
       </div>
     );
   }
