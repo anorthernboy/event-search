@@ -1,7 +1,6 @@
 import React from "react";
 
-const Scroll = props => {
-  const { children } = props;
+const Scroll = ({ children }) => {
   return (
     <div
       style={{

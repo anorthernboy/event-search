@@ -16,9 +16,11 @@ class Event extends Component {
   };
 
   render() {
-    const { isLoading, event } = this.state;
+    const { isLoading, isError, event } = this.state;
 
-    if (isLoading) return <h1>Loading...</h1>;
+    if (isError) return <p>this is an error</p>;
+
+    if (isLoading) return <p>this is a loading</p>;
 
     return (
       <div>

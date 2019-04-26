@@ -20,7 +20,12 @@ class App extends Component {
   };
 
   render() {
-    const { events } = this.state;
+    const { isLoading, isError, events } = this.state;
+
+    if (isError) return <p>this is an error</p>;
+
+    if (isLoading) return <p>this is a loading</p>;
+
     return (
       <div className="App">
         <Header fetchEventsByKeyword={this.fetchEventsByKeyword} />
@@ -39,7 +44,7 @@ class App extends Component {
     api
       .getEventsByKeyword(keyword)
       .then(({ data }) => {
-        this.setState({ events: data.results });
+        this.setState({ events: data.results, isLoading: false });
       })
       .catch(error => this.setState({ isError: error.response.data }));
   };
