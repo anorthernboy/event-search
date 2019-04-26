@@ -13,7 +13,12 @@ class Artist extends Component {
   };
 
   render() {
-    const { isLoading, artist } = this.state;
+    const { isLoading, isError, artist } = this.state;
+
+    if (isError) return <p>this is an error</p>;
+
+    if (isLoading) return <p>this is a loading</p>;
+
     return (
       <div>
         {Object.keys(artist).length !== 0 && (

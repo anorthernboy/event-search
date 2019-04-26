@@ -8,8 +8,6 @@ class Search extends Component {
   };
 
   render() {
-    console.log(this.state.keywords);
-
     return (
       <div className="Search">
         <form onSubmit={this.handleSubmit}>
