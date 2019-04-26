@@ -24,10 +24,14 @@ const EventCard = ({
           <div className="event-description">
             {description.slice(0, 90).trimEnd() + "..."}
           </div>
-          <img src={pin} alt="location" className="location-icon" />
-          <div className="event-location">{location}</div>
-          <img src={calendar} alt="date" className="date-icon" />
-          <div className="event-date">
+          <img
+            src={pin}
+            alt="location"
+            className="eventcard-icon location-icon"
+          />
+          <div className="eventcard-details event-location">{location}</div>
+          <img src={calendar} alt="date" className="eventcard-icon date-icon" />
+          <div className="eventcard-details event-date">
             {new Date(date).toLocaleDateString("en-GB", {
               day: "numeric",
               month: "long",

@@ -32,10 +32,10 @@ class Artist extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={twitter} alt="" className="artistpage-twitter" />
+              <img src={twitter} alt="" className="artistpage-social" />
             </a>
             <a href={`${artist.spotifyartisturl}`}>
-              <img src={spotify} alt="" className="artistpage-spotify" />
+              <img src={spotify} alt="" className="artistpage-social" />
             </a>
           </div>
         )}

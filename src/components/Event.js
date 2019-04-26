@@ -35,21 +35,29 @@ class Event extends Component {
               <img
                 src={pin}
                 alt="location"
-                className="eventpage-location-icon"
+                className="eventpage-icon eventpage-location-icon"
               />
-              <div className="eventpage-event-location">
+              <div className="eventpage-details eventpage-event-location">
                 {`${event.venue.name} in ${event.venue.town}`}
               </div>
-              <img src={calendar} alt="date" className="eventpage-date-icon" />
-              <div className="eventpage-event-date">
+              <img
+                src={calendar}
+                alt="date"
+                className="eventpage-icon eventpage-date-icon"
+              />
+              <div className="eventpage-details eventpage-event-date">
                 {new Date(event.date).toLocaleDateString("en-GB", {
                   day: "numeric",
                   month: "long",
                   year: "numeric"
                 })}
               </div>
-              <img src={wallclock} alt="time" className="eventpage-time-icon" />
-              <div className="eventpage-event-time">
+              <img
+                src={wallclock}
+                alt="time"
+                className="eventpage-icon eventpage-time-icon"
+              />
+              <div className="eventpage-details eventpage-event-time">
                 {`${event.openingtimes.doorsopen} til ${
                   event.openingtimes.doorsclose
                 }`}
@@ -57,9 +65,9 @@ class Event extends Component {
               <img
                 src={user}
                 alt="minimum age"
-                className="eventpage-minage-icon"
+                className="eventpage-icon eventpage-minage-icon"
               />
-              <div className="eventpage-event-minage">
+              <div className="eventpage-details eventpage-event-minage">
                 {`Minimum Age: ${event.MinAge}`}
               </div>
             </div>
