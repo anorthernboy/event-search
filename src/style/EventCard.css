@@ -1,0 +1,111 @@
+.EventCard {
+  background-color: #fff;
+  display: inline-block;
+  width: 280px;
+  height: 450px;
+  margin: 0.5rem 0.5rem;
+  border-radius: 5px;
+
+  box-shadow: 15px 0px 20px rgba(0, 0, 0, 0.1),
+    -15px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.EventCard:hover {
+  background-color: #f0f0f0;
+  opacity: 0.85;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  grid-template-rows: 6fr 0.7fr 0.7fr 0.6fr 0.6fr 1fr;
+  grid-template-areas:
+    "event-image   event-image"
+    "event-name   event-name"
+    "event-description   event-description"
+    "location-icon   event-location"
+    "date-icon   event-date"
+    "view-details   view-details";
+}
+
+.event-image {
+  grid-area: event-image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 280px;
+  max-height: 280px;
+}
+
+.event-name {
+  font-weight: 600;
+  grid-area: event-name;
+  margin: 0px 15px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.event-description {
+  font-weight: 250;
+  grid-area: event-description;
+  margin: 0px 15px;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 0.6rem;
+}
+
+.location-icon {
+  grid-area: location-icon;
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+  display: flex;
+  align-self: center;
+}
+
+.event-location {
+  font-weight: 250;
+  grid-area: event-location;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.date-icon {
+  grid-area: date-icon;
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+  display: flex;
+  align-self: center;
+}
+
+.event-date {
+  font-weight: 250;
+  grid-area: event-date;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.view-details {
+  grid-area: view-details;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #46c3bd;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 5px;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+}

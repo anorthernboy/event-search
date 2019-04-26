@@ -1,0 +1,45 @@
+.Artist {
+  background-color: #f0f0f0;
+  height: 73vh;
+  text-align: center;
+}
+
+.artistpage-profile-image {
+  height: 20vh;
+  width: 20vh;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 15px 0px 20px rgba(0, 0, 0, 0.1),
+    -15px 0px 20px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem 0.5rem;
+}
+
+.artistpage-artist-name {
+  font-weight: 600;
+  margin: auto;
+  padding: 0.5rem 3rem;
+  width: 60vw;
+  max-width: 300px;
+  font-size: 1.2rem;
+}
+
+.artistpage-artist-description {
+  font-weight: 250;
+  margin: auto;
+  padding: 0.5rem 3rem;
+  width: 60vw;
+  max-width: 300px;
+  font-size: 0.8rem;
+}
+
+.artistpage-twitter {
+  padding: 0.5rem 1rem;
+  width: 30px;
+  height: 30px;
+}
+
+.artistpage-spotify {
+  padding: 0.5rem 1rem;
+  width: 30px;
+  height: 30px;
+}

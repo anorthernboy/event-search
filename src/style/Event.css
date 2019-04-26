@@ -1,0 +1,140 @@
+.Event {
+  background-color: #f0f0f0;
+  height: 73vh;
+  text-align: center;
+}
+
+.eventpage-profile-image {
+  height: 20vh;
+  width: 20vh;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 15px 0px 20px rgba(0, 0, 0, 0.1),
+    -15px 0px 20px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem 0.5rem;
+}
+
+.eventpage-grid {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr;
+  grid-template-areas:
+    "eventpage-location-icon   eventpage-location"
+    "eventpage-date-icon   eventpage-date"
+    "eventpage-time-icon   eventpage-time"
+    "eventpage-minage-icon   eventpage-minage";
+  width: 70vw;
+  max-width: 300px;
+  margin: auto;
+  padding: 0.5rem 3rem;
+}
+
+.eventpage-event-name {
+  font-weight: 600;
+  margin: auto;
+  padding: 0.5rem 3rem;
+  width: 60vw;
+  max-width: 300px;
+  font-size: 1.2rem;
+}
+
+.eventpage-location-icon {
+  grid-area: eventpage-location-icon;
+  width: 15px;
+  height: 15px;
+  padding-left: 20px;
+  display: flex;
+  align-self: center;
+}
+
+.eventpage-event-location {
+  font-weight: 250;
+  padding: 0.3rem 0rem;
+  grid-area: eventpage-location;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.eventpage-date-icon {
+  grid-area: eventpage-date-icon;
+  width: 15px;
+  height: 15px;
+  padding-left: 20px;
+  display: flex;
+  align-self: center;
+}
+
+.eventpage-event-date {
+  font-weight: 250;
+  padding: 0.3rem 0rem;
+  grid-area: eventpage-date;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.eventpage-time-icon {
+  grid-area: eventpage-time-icon;
+  width: 15px;
+  height: 15px;
+  padding-left: 20px;
+  display: flex;
+  align-self: center;
+}
+
+.eventpage-event-time {
+  font-weight: 250;
+  padding: 0.3rem 0rem;
+  grid-area: eventpage-time;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.eventpage-minage-icon {
+  grid-area: eventpage-minage-icon;
+  width: 15px;
+  height: 15px;
+  padding-left: 20px;
+  display: flex;
+  align-self: center;
+}
+
+.eventpage-event-minage {
+  font-weight: 250;
+  padding: 0.3rem 0rem;
+  grid-area: eventpage-minage;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.eventpage-event-description {
+  font-weight: 250;
+  margin: auto;
+  padding: 0.5rem 3rem;
+  width: 60vw;
+  max-width: 300px;
+  font-size: 0.8rem;
+}
+
+.eventpage-artist-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #46c3bd;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  height: 4vh;
+  width: 60vw;
+  max-width: 300px;
+  border-radius: 5px;
+}
