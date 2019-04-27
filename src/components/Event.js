@@ -31,62 +31,70 @@ class Event extends Component {
               alt="event"
               className="eventpage-profile-image"
             />
-            <div className="eventpage-event-name">{event.eventname}</div>
 
-            <div className="eventpage-grid">
-              <img
-                src={pin}
-                alt="location"
-                className="eventpage-icon eventpage-location-icon"
-              />
-              <div className="eventpage-details eventpage-event-location">
-                {`${event.venue.name} in ${event.venue.town}`}
-              </div>
-              <img
-                src={calendar}
-                alt="date"
-                className="eventpage-icon eventpage-date-icon"
-              />
-              <div className="eventpage-details eventpage-event-date">
-                {new Date(event.date).toLocaleDateString("en-GB", {
-                  weekday: "long",
-                  day: "numeric",
-                  month: "long",
-                  year: "numeric"
-                })}
-              </div>
-              <img
-                src={wallclock}
-                alt="time"
-                className="eventpage-icon eventpage-time-icon"
-              />
-              <div className="eventpage-details eventpage-event-time">
-                {event.openingtimes.lastentry
-                  ? `${event.openingtimes.doorsopen} til ${
-                      event.openingtimes.doorsclose
-                    } (last entry ${event.openingtimes.lastentry.slice(0, 5)})`
-                  : `${event.openingtimes.doorsopen} til ${
-                      event.openingtimes.doorsclose
-                    }`}
-              </div>
-              <img
-                src={user}
-                alt="minimum age"
-                className="eventpage-icon eventpage-minage-icon"
-              />
-              <div className="eventpage-details eventpage-event-minage">
-                {`Minimum Age: ${event.MinAge}`}
+            <div className="eventpage-details-container">
+              <div className="eventpage-event-name">{event.eventname}</div>
+
+              <div className="eventpage-grid">
+                <img
+                  src={pin}
+                  alt="location"
+                  className="eventpage-icon eventpage-location-icon"
+                />
+                <div className="eventpage-details eventpage-event-location">
+                  {`${event.venue.name} in ${event.venue.town}`}
+                </div>
+                <img
+                  src={calendar}
+                  alt="date"
+                  className="eventpage-icon eventpage-date-icon"
+                />
+                <div className="eventpage-details eventpage-event-date">
+                  {new Date(event.date).toLocaleDateString("en-GB", {
+                    weekday: "long",
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric"
+                  })}
+                </div>
+                <img
+                  src={wallclock}
+                  alt="time"
+                  className="eventpage-icon eventpage-time-icon"
+                />
+                <div className="eventpage-details eventpage-event-time">
+                  {event.openingtimes.lastentry
+                    ? `${event.openingtimes.doorsopen} til ${
+                        event.openingtimes.doorsclose
+                      } (last entry ${event.openingtimes.lastentry.slice(
+                        0,
+                        5
+                      )})`
+                    : `${event.openingtimes.doorsopen} til ${
+                        event.openingtimes.doorsclose
+                      }`}
+                </div>
+                <img
+                  src={user}
+                  alt="minimum age"
+                  className="eventpage-icon eventpage-minage-icon"
+                />
+                <div className="eventpage-details eventpage-event-minage">
+                  {`Minimum Age: ${event.MinAge}`}
+                </div>
               </div>
             </div>
-            <div className="eventpage-event-description">
-              {event.description}
-            </div>
-            <div className="eventpage-event-artists">
-              {event.artists.map((artist, index) => (
-                <Link to={`/artist/${artist.artistid}`} key={index}>
-                  <div className="eventpage-artist-name">{artist.name}</div>
-                </Link>
-              ))}
+            <div className="eventpage-description-container">
+              <div className="eventpage-event-description">
+                {event.description}
+              </div>
+              <div className="eventpage-event-artists">
+                {event.artists.map((artist, index) => (
+                  <Link to={`/artist/${artist.artistid}`} key={index}>
+                    <div className="eventpage-artist-name">{artist.name}</div>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         )}

@@ -2,18 +2,32 @@
   background-color: #f0f0f0;
   height: 73vh;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 592px;
+  margin: 0 auto;
 }
 
 .eventpage-profile-image {
-  width: 60vw;
-  height: 60vw;
-  max-width: 300px;
-  max-height: 300px;
+  width: 280px;
+  height: 280px;
+  margin: 0.5rem 0rem;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 15px 0px 20px rgba(0, 0, 0, 0.1),
     -15px 0px 20px rgba(0, 0, 0, 0.1);
-  margin: 0.5rem 0.5rem;
+}
+
+.eventpage-details-container {
+  width: 280px;
+  max-height: 280px;
+  margin: 0.5rem 0rem;
+}
+
+.eventpage-description-container {
+  width: 592px;
+  height: 250px;
+  margin: 0.5rem 0rem;
 }
 
 .eventpage-grid {
@@ -25,19 +39,17 @@
     "eventpage-date-icon   eventpage-date"
     "eventpage-time-icon   eventpage-time"
     "eventpage-minage-icon   eventpage-minage";
-  width: 70vw;
-  max-width: 300px;
-  margin: auto;
-  padding: 0.5rem 3rem;
+  width: 280px;
+  padding: 0.5rem 0rem;
 }
 
 .eventpage-event-name {
   font-weight: 600;
-  margin: auto;
-  padding: 0.5rem 3rem;
-  width: 60vw;
-  max-width: 300px;
+  padding: 0.5rem 0rem;
+  padding-left: 0.8rem;
+  width: 280px;
   font-size: 1.2rem;
+  text-align: left;
 }
 
 .eventpage-icon {
@@ -50,7 +62,7 @@
 
 .eventpage-details {
   font-weight: 250;
-  padding: 0.3rem 0rem;
+  padding: 0.5rem 0rem;
   display: flex;
   align-items: center;
   text-align: left;
@@ -91,15 +103,13 @@
 
 .eventpage-event-description {
   font-weight: 250;
-  margin: auto;
-  padding: 0.5rem 3rem;
-  width: 60vw;
-  max-width: 300px;
-  font-size: 0.8rem;
+  width: 592px;
+  font-size: 1.1rem;
+  text-align: left;
 }
 
 .eventpage-event-artists {
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 0rem;
 }
 
 .eventpage-artist-name {
@@ -112,8 +122,29 @@
   text-align: center;
   margin: auto;
   margin-top: 10px;
-  height: 4vh;
-  width: 60vw;
-  max-width: 300px;
+  height: 30px;
+  width: 280px;
   border-radius: 5px;
+}
+
+@media (max-width: 591px) {
+  .Event {
+    width: 280px;
+  }
+
+  .eventpage-event-name {
+    text-align: center;
+    padding: 0.2rem 0rem;
+  }
+
+  .eventpage-event-description {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.5rem 0rem;
+    width: 280px;
+  }
+
+  .eventpage-details {
+    padding: 0.3rem 0rem;
+  }
 }
