@@ -1,6 +1,7 @@
 import React from "react";
-import EventCard from "../components/EventCard";
 import "../style/EventList.css";
+
+import EventCard from "../components/EventCard";
 
 const EventList = ({ events }) => {
   return (

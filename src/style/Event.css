@@ -4,14 +4,14 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  width: 592px;
+  width: 888px;
   margin: 0 auto;
 }
 
 .eventpage-profile-image {
   width: 280px;
   height: 280px;
-  margin: 0.5rem 0rem;
+  margin: 0.5rem 0.5rem;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 15px 0px 20px rgba(0, 0, 0, 0.1),
@@ -20,14 +20,20 @@
 
 .eventpage-details-container {
   width: 280px;
-  max-height: 280px;
-  margin: 0.5rem 0rem;
+  height: 280px;
+  margin: 0.5rem 0.5rem;
 }
 
 .eventpage-description-container {
-  width: 592px;
-  height: 250px;
-  margin: 0.5rem 0rem;
+  width: 280px;
+  height: 280px;
+  margin: 0.5rem 0.5rem;
+}
+
+.eventpage-buttons-container {
+  width: 280px;
+  height: 280px;
+  margin: 0.5rem 0.5rem;
 }
 
 .eventpage-grid {
@@ -102,28 +108,47 @@
 
 .eventpage-event-description {
   font-weight: 250;
-  width: 592px;
+  width: 280px;
   font-size: 1.1rem;
   text-align: left;
 }
 
-.eventpage-event-artists {
-  padding: 0.5rem 0rem;
+.eventpage-event-button {
+  cursor: pointer;
 }
 
-.eventpage-artist-name {
+.eventpage-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #46c3bd;
   color: #fff;
   font-size: 0.8rem;
   text-align: center;
   margin: auto;
-  margin-top: 10px;
+  margin-bottom: 0.4rem;
   height: 30px;
   width: 280px;
   border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.eventpage-artist-name {
+  background-color: #46c3bd;
+}
+
+.eventpage-genre-name {
+  background-color: cadetblue;
+}
+
+.eventpage-going-name {
+  background-color: darkslategray;
+  opacity: 0.85;
+}
+
+@media (max-width: 887px) {
+  .Event {
+    width: 592px;
+  }
 }
 
 @media (max-width: 591px) {

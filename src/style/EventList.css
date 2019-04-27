@@ -2,7 +2,13 @@
   background-color: #f0f0f0;
   display: inline-block;
   margin: 0 auto;
-  width: 888px;
+  width: 1184px;
+}
+
+@media (max-width: 1183px) {
+  .EventList {
+    width: 888px;
+  }
 }
 
 @media (max-width: 887px) {

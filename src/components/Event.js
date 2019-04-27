@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "@reach/router";
+import { Link, navigate } from "@reach/router";
 import * as api from "../api/api";
 import "../style/Event.css";
 
@@ -88,11 +88,38 @@ class Event extends Component {
               <div className="eventpage-event-description">
                 {event.description}
               </div>
-              <div className="eventpage-event-artists">
-                {event.artists.map((artist, index) => (
+            </div>
+            <div className="eventpage-buttons-container">
+              <div className="eventpage-event-button">
+                {event.artists.slice(0, 5).map((artist, index) => (
                   <Link to={`/artist/${artist.artistid}`} key={index}>
-                    <div className="eventpage-artist-name">{artist.name}</div>
+                    <div className="eventpage-button eventpage-artist-name">
+                      {artist.name}
+                    </div>
                   </Link>
+                ))}
+              </div>
+            </div>
+            <div className="eventpage-buttons-container">
+              <div className="eventpage-event-button">
+                {event.genres.slice(0, 5).map((genre, index) => (
+                  <Link to={`/genre/${genre.name}`} key={index}>
+                    <div className="eventpage-button eventpage-genre-name">
+                      {genre.name}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="eventpage-buttons-container">
+              <div className="eventpage-event-button">
+                {event.going.slice(0, 5).map((going, index) => (
+                  <div
+                    key={index}
+                    className="eventpage-button eventpage-going-name"
+                  >
+                    {going.name}
+                  </div>
                 ))}
               </div>
             </div>
