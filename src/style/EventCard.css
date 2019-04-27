@@ -1,6 +1,6 @@
 .EventCard {
   background-color: #fff;
-  display: inline-block;
+  float: left;
   width: 280px;
   height: 450px;
   margin: 0.5rem 0.5rem;

@@ -1,16 +1,8 @@
 import React from "react";
+import "../style/Scroll.css";
 
 const Scroll = ({ children }) => {
-  return (
-    <div
-      style={{
-        overflowY: "scroll",
-        height: "83vh"
-      }}
-    >
-      {children}
-    </div>
-  );
+  return <div className="Scroll">{children}</div>;
 };
 
 export default Scroll;

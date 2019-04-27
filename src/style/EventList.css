@@ -1,4 +1,18 @@
 .EventList {
   background-color: #f0f0f0;
-  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  width: 888px;
+}
+
+@media (max-width: 887px) {
+  .EventList {
+    width: 592px;
+  }
+}
+
+@media (max-width: 591px) {
+  .EventList {
+    width: 296px;
+  }
 }
