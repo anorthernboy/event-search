@@ -179,21 +179,21 @@
   }
 
   .eventpage-profile-image {
-    margin: 0rem 0.5rem;
+    margin: 0.5rem 0rem;
   }
 
   .eventpage-details-container {
-    margin: 0rem 0.5rem;
+    margin: 0rem 0rem;
     padding: 0.3rem 0rem;
   }
 
   .eventpage-description-container {
-    /* margin: 0rem 0.5rem; */
+    margin: 0rem 0rem;
     padding: 0.3rem 0rem;
   }
 
   .eventpage-buttons-container {
-    margin: 0rem 0.5rem;
+    margin: 0rem 0rem;
     padding: 0.3rem 0rem;
   }
 }
