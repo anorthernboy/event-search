@@ -29,9 +29,6 @@ class Artist extends Component {
               className="artistpage-profile-image"
             />
             <div className="artistpage-artist-name">{artist.name}</div>
-            <div className="artistpage-artist-description">
-              {artist.description}
-            </div>
             <a
               href={`https://twitter.com/${artist.twitter}`}
               target="_blank"
@@ -42,6 +39,9 @@ class Artist extends Component {
             <a href={`${artist.spotifyartisturl}`}>
               <img src={spotify} alt="" className="artistpage-social" />
             </a>
+            <div className="artistpage-artist-description">
+              {artist.description}
+            </div>
           </div>
         )}
       </div>

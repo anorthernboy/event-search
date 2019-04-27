@@ -45,10 +45,9 @@
 
 .eventpage-event-name {
   font-weight: 600;
-  padding: 0.5rem 0rem;
   padding-left: 0.8rem;
   width: 280px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: left;
 }
 
@@ -135,16 +134,17 @@
   .eventpage-event-name {
     text-align: center;
     padding: 0.2rem 0rem;
+    font-size: 1.2rem;
   }
 
   .eventpage-event-description {
     text-align: center;
     font-size: 0.9rem;
-    padding: 0.5rem 0rem;
     width: 280px;
   }
 
-  .eventpage-details {
+  .eventpage-details-container {
     padding: 0.3rem 0rem;
+    margin: 0px;
   }
 }
