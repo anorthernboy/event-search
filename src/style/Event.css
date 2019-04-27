@@ -5,6 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 888px;
+  max-height: 200px;
   margin: 0 auto;
 }
 
@@ -20,19 +21,16 @@
 
 .eventpage-details-container {
   width: 280px;
-  height: 280px;
   margin: 0.5rem 0.5rem;
 }
 
 .eventpage-description-container {
   width: 280px;
-  height: 280px;
   margin: 0.5rem 0.5rem;
 }
 
 .eventpage-buttons-container {
   width: 280px;
-  height: 280px;
   margin: 0.5rem 0.5rem;
 }
 
@@ -149,6 +147,18 @@
   .Event {
     width: 592px;
   }
+
+  .eventpage-event-description {
+    width: 560px;
+  }
+
+  .eventpage-description-container {
+    width: 560px;
+  }
+
+  .eventpage-buttons-container {
+    width: 560px;
+  }
 }
 
 @media (max-width: 591px) {
@@ -168,8 +178,22 @@
     width: 280px;
   }
 
+  .eventpage-profile-image {
+    margin: 0rem 0.5rem;
+  }
+
   .eventpage-details-container {
+    margin: 0rem 0.5rem;
     padding: 0.3rem 0rem;
-    margin: 0px;
+  }
+
+  .eventpage-description-container {
+    /* margin: 0rem 0.5rem; */
+    padding: 0.3rem 0rem;
+  }
+
+  .eventpage-buttons-container {
+    margin: 0rem 0.5rem;
+    padding: 0.3rem 0rem;
   }
 }

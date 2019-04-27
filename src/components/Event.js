@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, navigate } from "@reach/router";
+import { Link } from "@reach/router";
 import * as api from "../api/api";
 import "../style/Event.css";
 
@@ -103,7 +103,10 @@ class Event extends Component {
             <div className="eventpage-buttons-container">
               <div className="eventpage-event-button">
                 {event.genres.slice(0, 5).map((genre, index) => (
-                  <Link to={`/genre/${genre.name}`} key={index}>
+                  <Link
+                    to={`/genre/${genre.name}%20${event.venue.town}`}
+                    key={index}
+                  >
                     <div className="eventpage-button eventpage-genre-name">
                       {genre.name}
                     </div>
