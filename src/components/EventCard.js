@@ -38,15 +38,16 @@ const EventCard = ({
               year: "numeric"
             })}
           </div>
-          <Link to={`/event/${eventId}`} className="more-button view-details">
-            <div className="button-text">view details</div>
-          </Link>
-          <Link
-            to={`/events/${eventType}%20${location}`}
-            className="more-button view-similar"
-          >
-            <div className="button-text">more like this</div>
-          </Link>
+          <object className="more-button view-details">
+            <Link to={`/event/${eventId}`}>
+              <div className="button-text">view details</div>
+            </Link>
+          </object>
+          <object className="more-button view-similar">
+            <Link to={`/events/${eventType}%20${location}`}>
+              <div className="button-text">more like this</div>
+            </Link>
+          </object>
         </div>
       </Link>
     </div>
