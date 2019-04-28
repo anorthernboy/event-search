@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import * as api from "../api/api";
 import "../style/Artist.css";
 
+import Loading from "../components/Loading";
 import twitter from "../assets/twitter.png";
 import spotify from "../assets/spotify.png";
 
@@ -17,7 +18,7 @@ class Artist extends Component {
 
     if (isError) return <p>this is an error</p>;
 
-    if (isLoading) return <p>this is a loading</p>;
+    if (isLoading) return <Loading />;
 
     return (
       <div>

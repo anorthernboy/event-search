@@ -3,6 +3,7 @@ import * as api from "../api/api";
 import "../style/EventList.css";
 
 import EventCard from "./EventCard";
+import Loading from "../components/Loading";
 
 class EventListSearch extends Component {
   state = {
@@ -16,7 +17,7 @@ class EventListSearch extends Component {
 
     if (isError) return <p>this is an error</p>;
 
-    if (isLoading) return <p>this is a loading</p>;
+    if (isLoading) return <Loading />;
 
     return (
       <div>

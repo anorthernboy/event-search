@@ -3,6 +3,7 @@ import { Link } from "@reach/router";
 import * as api from "../api/api";
 import "../style/Event.css";
 
+import Loading from "../components/Loading";
 import pin from "../assets/pin.png";
 import calendar from "../assets/calendar.png";
 import wallclock from "../assets/wall-clock.png";
@@ -20,7 +21,7 @@ class Event extends Component {
 
     if (isError) return <p>this is an error</p>;
 
-    if (isLoading) return <p>this is a loading</p>;
+    if (isLoading) return <Loading />;
 
     return (
       <div>

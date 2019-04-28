@@ -8,6 +8,7 @@ import EventList from "./components/EventList";
 import EventListSearch from "./components/EventListSearch";
 import Event from "./components/Event";
 import Artist from "./components/Artist";
+import Loading from "./components/Loading";
 
 class App extends Component {
   state = {
@@ -25,7 +26,7 @@ class App extends Component {
 
     if (isError) return <p>this is an error</p>;
 
-    if (isLoading) return <p>this is a loading</p>;
+    if (isLoading) return <Loading />;
 
     return (
       <div>
