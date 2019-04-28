@@ -11,7 +11,7 @@
 
 .EventCard:hover {
   background-color: #f0f0f0;
-  opacity: 0.85;
+  opacity: 0.95;
 }
 
 .event-grid {
@@ -83,6 +83,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #46c3bd;
   color: #fff;
   font-size: 0.7rem;
   text-align: center;
@@ -93,6 +94,10 @@
   border-radius: 5px;
 }
 
+.more-button:hover {
+  background-color: cadetblue;
+}
+
 .button-text {
   color: #fff;
   text-transform: uppercase;
@@ -100,10 +105,8 @@
 
 .view-details {
   grid-area: view-details;
-  background-color: #46c3bd;
 }
 
 .view-similar {
   grid-area: view-similar;
-  background-color: cadetblue;
 }
