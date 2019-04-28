@@ -17,14 +17,14 @@
 .event-grid {
   display: grid;
   grid-template-columns: 2fr 8fr;
-  grid-template-rows: 6fr 0.7fr 0.7fr 0.6fr 0.6fr 1fr;
+  grid-template-rows: 6fr 0.6fr 0.6fr 0.6fr 0.9fr 0.9fr;
   grid-template-areas:
     "event-image   event-image"
     "event-name   event-name"
-    "event-description   event-description"
     "location-icon   event-location"
     "date-icon   event-date"
-    "view-details   view-details";
+    "view-details   view-details"
+    "view-similar   view-similar";
 }
 
 .event-image {
@@ -45,16 +45,6 @@
   align-items: center;
   text-align: left;
   font-size: 0.9rem;
-}
-
-.event-description {
-  font-weight: 250;
-  grid-area: event-description;
-  margin: 0px 15px;
-  display: flex;
-  align-items: flex-start;
-  text-align: left;
-  font-size: 0.6rem;
 }
 
 .eventcard-icon {
@@ -89,18 +79,31 @@
   grid-area: event-date;
 }
 
-.view-details {
-  grid-area: view-details;
+.more-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #46c3bd;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-align: center;
   margin: auto;
   margin-top: 5px;
   width: 250px;
   height: 30px;
   border-radius: 5px;
+}
+
+.button-text {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.view-details {
+  grid-area: view-details;
+  background-color: #46c3bd;
+}
+
+.view-similar {
+  grid-area: view-similar;
+  background-color: cadetblue;
 }

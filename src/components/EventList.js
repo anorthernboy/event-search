@@ -12,9 +12,9 @@ const EventList = ({ events }) => {
           eventImage={events[index].largeimageurl}
           eventId={events[index].id}
           eventName={events[index].eventname}
-          description={events[index].description}
           location={events[index].venue.town}
           date={events[index].date}
+          eventType={events[index].EventCode}
         />
       ))}
     </div>

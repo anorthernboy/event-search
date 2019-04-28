@@ -104,7 +104,7 @@ class Event extends Component {
               <div className="eventpage-event-button">
                 {event.genres.slice(0, 5).map((genre, index) => (
                   <Link
-                    to={`/genre/${genre.name}%20${event.venue.town}`}
+                    to={`/events/${genre.name}%20${event.venue.town}`}
                     key={index}
                   >
                     <div className="eventpage-button eventpage-genre-name">

@@ -5,7 +5,7 @@ import * as api from "./api/api";
 import Header from "./components/Header";
 import Scroll from "./components/Scroll";
 import EventList from "./components/EventList";
-import EventListByGenre from "./components/EventListByGenre";
+import EventListSearch from "./components/EventListSearch";
 import Event from "./components/Event";
 import Artist from "./components/Artist";
 
@@ -35,7 +35,7 @@ class App extends Component {
             <Scroll>
               <Router>
                 <EventList path="/" events={events} />
-                <EventListByGenre path="/genre/:genre_name" />
+                <EventListSearch path="/events/:search" />
                 <Event path="/event/:event_id" />
                 <Artist path="/artist/:artist_id" />
               </Router>

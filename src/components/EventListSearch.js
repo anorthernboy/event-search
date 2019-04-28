@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import * as api from "../api/api";
 import "../style/EventList.css";
 
-import EventCard from "../components/EventCard";
+import EventCard from "./EventCard";
 
-class EventListByGenre extends Component {
+class EventListSearch extends Component {
   state = {
     isLoading: true,
     isError: "",
@@ -40,8 +40,8 @@ class EventListByGenre extends Component {
   }
 
   componentDidMount = () => {
-    const { genre_name } = this.props;
-    this.fetchEventsByKeyword(genre_name);
+    const { search } = this.props;
+    this.fetchEventsByKeyword(search);
   };
 
   fetchEventsByKeyword = keyword => {
@@ -54,4 +54,4 @@ class EventListByGenre extends Component {
   };
 }
 
-export default EventListByGenre;
+export default EventListSearch;
