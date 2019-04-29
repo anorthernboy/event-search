@@ -19,9 +19,9 @@ const EventCard = ({
         <div className="event-grid">
           <img src={eventImage} alt="" className="event-image" />
           <div className="event-name">
-            {eventName.length <= 30
+            {eventName.length <= 25
               ? eventName
-              : eventName.slice(0, 30).trimEnd() + "..."}
+              : eventName.slice(0, 25).trimEnd() + "..."}
           </div>
           <img
             src={pin}

@@ -8,7 +8,7 @@ const EventList = ({ events }) => {
     <div className="EventList">
       {events.map((event, index) => (
         <EventCard
-          key={index}
+          key={events[index].id}
           eventImage={events[index].largeimageurl}
           eventId={events[index].id}
           eventName={events[index].eventname}

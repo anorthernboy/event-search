@@ -93,7 +93,7 @@ class Event extends Component {
             <div className="eventpage-buttons-container">
               <div className="eventpage-event-button">
                 {event.artists.slice(0, 5).map((artist, index) => (
-                  <Link to={`/artist/${artist.artistid}`} key={index}>
+                  <Link to={`/artist/${artist.artistid}`} key={artist.artistid}>
                     <div className="eventpage-button eventpage-artist-name">
                       {artist.name}
                     </div>
@@ -106,7 +106,7 @@ class Event extends Component {
                 {event.genres.slice(0, 5).map((genre, index) => (
                   <Link
                     to={`/events/${genre.name}%20${event.venue.town}`}
-                    key={index}
+                    key={genre.name}
                   >
                     <div className="eventpage-button eventpage-genre-name">
                       {genre.name}
@@ -119,7 +119,7 @@ class Event extends Component {
               <div className="eventpage-event-button">
                 {event.going.slice(0, 5).map((going, index) => (
                   <div
-                    key={index}
+                    key={going.name}
                     className="eventpage-button eventpage-going-name"
                   >
                     {going.name}
